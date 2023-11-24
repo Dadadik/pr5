@@ -1,0 +1,25 @@
+﻿<Window x:Class="task5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:task5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Foreground="#243238" Text="Введите x" Padding="12" Height="32" Margin="0,10,298,168"></TextBlock>
+        <TextBlock Foreground="#243238"   Text="Введите y" Padding="12" Height="32" Margin="0,63,298,115"></TextBlock>
+        <TextBox x:Name="x" Height="32" Margin="98,15,179,163"/>
+        <TextBox x:Name="y" Height="32" Margin="98,63,179,115"></TextBox>
+        <Button Height="32" Foreground="#fff6a5" Click="Button_Click" Margin="10,128,251,50">Решить</Button>
+        <TextBox x:Name="otvet" Height="32" Margin="169,128,108,50"/>
+    </Grid>
+</Window>
